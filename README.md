@@ -2,6 +2,8 @@
 
 A clean, minimal file icon theme for Zed, inspired by the JetBrains New UI (Air) icon set.
 
+> **Pairs with [Air Theme](https://github.com/franzgollhammer/air-theme-zed)** — companion color theme (dark + light) ported from JetBrains Air. Designed to look right next to these icons.
+
 ![Air Icons preview](preview-air-icons.png)
 
 ## Features

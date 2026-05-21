@@ -1,0 +1,9 @@
+Air Icons for Zed
+Copyright 2026 Franz Gollhammer
+
+This product includes icon assets derived from JetBrains intellij-community
+(https://github.com/JetBrains/intellij-community), licensed under the
+Apache License, Version 2.0.
+
+Source path within intellij-community:
+  platform/icons/src/expui/fileTypes/

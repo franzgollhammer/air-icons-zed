@@ -1,7 +1,7 @@
-id = "jetbrains-air-icons"
-name = "JetBrains Air Icons"
+id = "air-icons"
+name = "Air Icons"
 schema_version = 1
 version = "0.1.0"
 authors = ["fg"]
-description = "JetBrains Air-inspired file icons for Zed, extracted from a local Air install."
+description = "Air-inspired file icons for Zed."
 repository = "https://github.com/franzgollhammer/air-icons-zed"

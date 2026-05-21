@@ -1,38 +1,63 @@
-# JetBrains Air Icons for Zed
+# Air Icons
 
-A Zed icon theme extension built from the file icons bundled with the locally installed `Air.app`.
+A clean, minimal file icon theme for Zed, inspired by the JetBrains New UI (Air) icon set.
 
-## Included themes
+![Air Icons preview](preview-air-icons.png)
 
-- `JetBrains Air Icons Dark`
-- `JetBrains Air Icons Light`
+## Features
 
-## Local install
+- 112 file type icons, dark + light variants
+- Wide language, framework, and config file coverage
+- Crisp monochrome-accent style, tuned for compact tree UIs
 
-1. Open Zed.
-2. Run `zed: install dev extension`.
-3. Select this repository.
-4. Run `icon theme selector: toggle` and choose a JetBrains Air Icons variant.
+## Install
 
-To switch automatically with system appearance, set this in your Zed settings:
+### Zed Extensions
+
+1. `cmd-shift-p` / `ctrl-shift-p` → `zed: extensions`
+2. Search `Air Icons`
+3. Install
+4. `cmd-shift-p` / `ctrl-shift-p` → `icon theme selector: toggle` → pick `Air Icons Dark` or `Air Icons Light`
+
+### Auto-switch with system appearance
+
+Add to Zed settings:
 
 ```json
 {
   "icon_theme": {
     "mode": "system",
-    "light": "JetBrains Air Icons Light",
-    "dark": "JetBrains Air Icons Dark"
+    "light": "Air Icons Light",
+    "dark": "Air Icons Dark"
   }
 }
 ```
 
-## Sync from Air
+### Manual (dev extension)
+
+1. Clone this repo
+2. `cmd-shift-p` / `ctrl-shift-p` → `zed: install dev extension`
+3. Select repo folder
+4. Pick theme via `icon theme selector: toggle`
+
+## Supported file types
+
+Languages: JavaScript, TypeScript, React, Vue, Svelte, Python, Rust, Go, Java, Kotlin, Swift, C/C++, C#, Ruby, PHP, Dart, Elixir, Haskell, Scala, Clojure, Erlang, Lua, R, Julia, Zig, Nim, OCaml, F#, Groovy, Perl, and more.
+
+Configs: Docker, Git, Webpack, Vite, Rollup, ESLint, Prettier, Babel, TSConfig, npm, pnpm, yarn, bun, Cargo, Maven, Gradle, Bazel, Terraform, Bicep, CMake, and more.
+
+## Development
 
 ```sh
-./scripts/sync_from_air.sh
+./scripts/sync_from_air.sh   # re-sync icons from local Air.app
 ```
 
-## Notes
+See [`scripts/`](scripts) for sync automation.
 
-- The icon assets are extracted from JetBrains Air. Review JetBrains licensing before publishing or redistributing this extension.
-- Update `repository` in `extension.toml` if you publish this repo.
+## Attribution
+
+Icons derived from JetBrains Air. Review licensing before redistribution.
+
+## License
+
+Apache 2.0

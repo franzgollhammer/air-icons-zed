@@ -1,9 +1,20 @@
 Air Icons for Zed
 Copyright 2026 Franz Gollhammer
 
-This product includes icon assets derived from JetBrains intellij-community
-(https://github.com/JetBrains/intellij-community), licensed under the
-Apache License, Version 2.0.
+This extension bundles two icon sets:
 
-Source path within intellij-community:
-  platform/icons/src/expui/fileTypes/
+1. Air Icons (icon_themes/air-icons.json, icons/air/dark/, icons/air/light/)
+   Derived from JetBrains intellij-community
+   (https://github.com/JetBrains/intellij-community), licensed under the
+   Apache License, Version 2.0.
+   Source path within intellij-community:
+     platform/icons/src/expui/fileTypes/
+
+2. Water Icons (icon_themes/water-icons.json, icons/water/dark/, icons/water/light/)
+   Subset of Material Icon Theme
+   (https://github.com/material-extensions/vscode-material-icon-theme),
+   Copyright (c) 2021 Philipp Kief, licensed under the MIT License.
+   Icon filename list scraped from Conductor.app v0.58.0
+   (https://conductor.build); SVGs sourced from upstream releases
+   (v5.35.0 + v5.9.0 + pre-rename git history).
+   See icons/water/LICENSE.md for full MIT text.

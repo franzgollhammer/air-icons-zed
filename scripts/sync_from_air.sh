@@ -12,8 +12,8 @@ if [[ ! -f "$SOURCE_ZIP" ]]; then
   exit 1
 fi
 
-rm -rf "$TMP_DIR" "$ROOT_DIR/icons"
-mkdir -p "$TMP_DIR"
+rm -rf "$TMP_DIR" "$ROOT_DIR/icons/air"
+mkdir -p "$TMP_DIR" "$ROOT_DIR/icons/air"
 
 unzip -q "$SOURCE_ZIP" \
   "icons/dark/file-types/*" \
@@ -28,8 +28,9 @@ unzip -q "$SOURCE_ZIP" \
   "icons/light/docker.svg" \
   -d "$TMP_DIR"
 
-mv "$TMP_DIR/icons" "$ROOT_DIR/icons"
+mv "$TMP_DIR/icons/dark" "$ROOT_DIR/icons/air/dark"
+mv "$TMP_DIR/icons/light" "$ROOT_DIR/icons/air/light"
 rm -rf "$TMP_DIR"
 
 echo "Synced Air icons into:"
-echo "  $ROOT_DIR/icons"
+echo "  $ROOT_DIR/icons/air"

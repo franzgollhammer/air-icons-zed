@@ -1,16 +1,42 @@
 # Air Icons
 
-A clean, minimal file icon theme for Zed, inspired by the JetBrains New UI (Air) icon set.
+Two icon themes for Zed in one extension:
 
-> **Pairs with [Air Theme](https://github.com/franzgollhammer/air-theme-zed)** — companion color theme (dark + light) ported from JetBrains Air. Designed to look right next to these icons.
+- **Air Icons** — clean, minimal, inspired by the JetBrains New UI (Air) icon set
+- **Water Icons** — colorful Material Icon Theme subset (910 icons)
+
+> **Pairs with [Air Theme](https://github.com/franzgollhammer/air-theme-zed)** — companion color theme (dark + light) ported from JetBrains Air.
 
 ![Air Icons preview](preview-air-icons.png)
 
-## Features
+## Themes
 
-- 112 file type icons, dark + light variants
-- Wide language, framework, and config file coverage
-- Crisp monochrome-accent style, tuned for compact tree UIs
+### Air Icons (Dark + Light)
+
+- 112 file type icons, monochrome-accent style, tuned for compact tree UIs
+- Derived from JetBrains Air (Apache 2.0)
+
+### Water Icons (Dark + Light)
+
+- 910 icons covering ~850 file extensions, ~1600 file names, ~2500 folder names
+- Material Icon Theme subset
+- Light theme bakes in 34 `_light` variants for icons that ship a light-mode counterpart
+
+## Repository layout
+
+```
+icons/
+├── air/
+│   ├── dark/    # 112 Air SVGs (dark)
+│   └── light/   # 112 Air SVGs (light)
+└── water/
+    ├── dark/    # 910 Material SVGs (dark)
+    ├── light/   # 910 Material SVGs (light variants applied where available)
+    └── LICENSE.md
+icon_themes/
+├── air-icons.json
+└── water-icons.json
+```
 
 ## Install
 
@@ -19,7 +45,7 @@ A clean, minimal file icon theme for Zed, inspired by the JetBrains New UI (Air)
 1. `cmd-shift-p` / `ctrl-shift-p` → `zed: extensions`
 2. Search `Air Icons`
 3. Install
-4. `cmd-shift-p` / `ctrl-shift-p` → `icon theme selector: toggle` → pick `Air Icons Dark` or `Air Icons Light`
+4. `cmd-shift-p` / `ctrl-shift-p` → `icon theme selector: toggle` → pick `Air Icons Dark`/`Light` or `Water Icons Dark`/`Light`
 
 ### Auto-switch with system appearance
 
@@ -31,6 +57,18 @@ Add to Zed settings:
     "mode": "system",
     "light": "Air Icons Light",
     "dark": "Air Icons Dark"
+  }
+}
+```
+
+Or with Water Icons:
+
+```json
+{
+  "icon_theme": {
+    "mode": "system",
+    "light": "Water Icons Light",
+    "dark": "Water Icons Dark"
   }
 }
 ```
@@ -51,15 +89,19 @@ Configs: Docker, Git, Webpack, Vite, Rollup, ESLint, Prettier, Babel, TSConfig, 
 ## Development
 
 ```sh
-./scripts/sync_from_air.sh   # re-sync icons from local Air.app
+./scripts/sync_from_air.sh           # re-sync Air Icons from local Air.app
+./scripts/generate_water_icons.py    # regenerate Water Icons theme JSON
 ```
 
 See [`scripts/`](scripts) for sync automation.
 
 ## Attribution
 
-Icons derived from JetBrains Air. Review licensing before redistribution.
+- **Air Icons** — derived from JetBrains Air (Apache 2.0)
+- **Water Icons** — Material Icon Theme by Philipp Kief (MIT), filename subset
+
+See [`NOTICE`](NOTICE) for full attribution and [`icons/water/LICENSE.md`](icons/water/LICENSE.md) for the MIT text.
 
 ## License
 
-Apache 2.0
+Apache 2.0 (extension code + Air Icons assets). Water Icons assets MIT.

@@ -14,7 +14,7 @@ from pathlib import Path
 
 REPO = Path(__file__).resolve().parent.parent
 WATER_DARK = REPO / "icons" / "water" / "dark"
-MIT_JSON = Path("/tmp/mit-pkg/package/dist/material-icons.json")
+MIT_JSON = Path("/tmp/mit-new/package/dist/material-icons.json")
 OUT = REPO / "icon_themes" / "water-icons.json"
 
 available = {p.stem for p in WATER_DARK.glob("*.svg")}

@@ -1,9 +1,18 @@
 Air Icons for Zed
 Copyright 2026 Franz Gollhammer
 
-Air Icons (icon_themes/air-icons.json, icons/air/dark/, icons/air/light/)
-Derived from JetBrains intellij-community
-(https://github.com/JetBrains/intellij-community), licensed under the
-Apache License, Version 2.0.
-Source path within intellij-community:
-  platform/icons/src/expui/fileTypes/
+This extension bundles two icon sets:
+
+1. Air Icons (icon_themes/air-icons.json, icons/air/dark/, icons/air/light/)
+   Derived from JetBrains intellij-community
+   (https://github.com/JetBrains/intellij-community), licensed under the
+   Apache License, Version 2.0.
+   Source path within intellij-community:
+     platform/icons/src/expui/fileTypes/
+
+2. Air Material Icons (icon_themes/air-material-icons.json,
+   icons/air-material/dark/, icons/air-material/light/)
+   Full icon set from Material Icon Theme
+   (https://github.com/material-extensions/vscode-material-icon-theme) v5.35.0,
+   Copyright (c) 2025 Material Extensions, licensed under the MIT License.
+   See icons/air-material/LICENSE.md for full MIT text.
